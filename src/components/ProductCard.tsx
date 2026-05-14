@@ -1,4 +1,4 @@
-import "./ProductCard.css";
+import "./Productcard.css";
 
 type Props = {
 
