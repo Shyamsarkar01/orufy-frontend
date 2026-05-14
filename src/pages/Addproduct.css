@@ -1,0 +1,335 @@
+/* AddProduct.css */
+
+.add-product {
+
+  min-height: 100vh;
+
+  padding: 120px 20px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  background:
+    linear-gradient(
+      rgba(15,23,42,0.75),
+      rgba(15,23,42,0.75)
+    ),
+
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071&auto=format&fit=crop")
+    center/cover no-repeat;
+
+  position: relative;
+}
+
+/* Floating Glow */
+
+.add-product::before {
+
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+
+  height: 350px;
+
+  background:
+    rgba(37,99,235,0.25);
+
+  filter: blur(120px);
+
+  top: 10%;
+
+  left: 5%;
+}
+
+.add-product::after {
+
+  content: "";
+
+  position: absolute;
+
+  width: 350px;
+
+  height: 350px;
+
+  background:
+    rgba(124,58,237,0.22);
+
+  filter: blur(120px);
+
+  bottom: 5%;
+
+  right: 5%;
+}
+
+/* Main Form Container */
+
+.form-container {
+
+  width: 100%;
+
+  max-width: 700px;
+
+  background:
+    rgba(255,255,255,0.12);
+
+  backdrop-filter: blur(20px);
+
+  border:
+    1px solid rgba(255,255,255,0.15);
+
+  padding: 55px;
+
+  border-radius: 32px;
+
+  position: relative;
+
+  z-index: 10;
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,0.25);
+
+  animation:
+    formFade 1s ease;
+}
+
+/* Heading */
+
+.form-container h1 {
+
+  text-align: center;
+
+  font-size: 52px;
+
+  font-weight: 900;
+
+  color: white;
+
+  margin-bottom: 45px;
+}
+
+/* Form */
+
+.form-container form {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 24px;
+}
+
+/* Inputs */
+
+.form-group {
+
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+
+  width: 100%;
+
+  padding: 20px 22px;
+
+  border-radius: 18px;
+
+  border:
+    1px solid rgba(255,255,255,0.18);
+
+  background:
+    rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(10px);
+
+  color: white;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.35s ease;
+}
+
+/* Placeholder */
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+
+  color:
+    rgba(255,255,255,0.7);
+}
+
+/* Focus */
+
+.form-group input:focus,
+.form-group textarea:focus {
+
+  border-color:
+    #60a5fa;
+
+  background:
+    rgba(255,255,255,0.12);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 0 0 5px rgba(96,165,250,0.18);
+}
+
+/* Textarea */
+
+.form-group textarea {
+
+  min-height: 150px;
+
+  resize: none;
+}
+
+/* Button */
+
+.submit-btn {
+
+  width: 100%;
+
+  padding: 18px;
+
+  border: none;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  color: white;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.4s ease;
+
+  margin-top: 10px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+/* Shine Effect */
+
+.submit-btn::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: -120%;
+
+  width: 100%;
+
+  height: 100%;
+
+  background:
+    rgba(255,255,255,0.22);
+
+  transform: skewX(-25deg);
+
+  transition: 0.7s;
+}
+
+.submit-btn:hover::before {
+
+  left: 120%;
+}
+
+/* Hover */
+
+.submit-btn:hover {
+
+  transform:
+    translateY(-5px)
+    scale(1.02);
+
+  box-shadow:
+    0 20px 40px rgba(37,99,235,0.35);
+}
+
+/* Animation */
+
+@keyframes formFade {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(60px);
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0px);
+  }
+
+}
+
+/* Footer Space */
+
+.add-product {
+
+  margin-bottom: 120px;
+}
+
+/* Responsive */
+
+@media(max-width:768px) {
+
+  .add-product {
+
+    padding: 80px 18px;
+  }
+
+  .form-container {
+
+    padding: 35px 25px;
+  }
+
+  .form-container h1 {
+
+    font-size: 38px;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .form-container h1 {
+
+    font-size: 32px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+
+    padding: 17px;
+  }
+
+}

@@ -1,0 +1,133 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Reset */
+
+* {
+
+  margin: 0;
+
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+/* Root */
+
+:root {
+
+  --primary:
+    #2563eb;
+
+  --secondary:
+    #7c3aed;
+
+  --dark:
+    #111827;
+
+  --gray:
+    #6b7280;
+
+  --light:
+    #f8fafc;
+
+  --white:
+    #ffffff;
+}
+
+/* Body */
+
+body {
+
+  font-family:
+    'Inter',
+    sans-serif;
+
+  background:
+    var(--light);
+
+  color:
+    var(--dark);
+
+  overflow-x: hidden;
+
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+
+  background:
+    #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+
+  background:
+    linear-gradient(
+      180deg,
+      #2563eb,
+      #7c3aed
+    );
+
+  border-radius: 30px;
+}
+
+/* Images */
+
+img {
+
+  width: 100%;
+
+  display: block;
+}
+
+/* Buttons */
+
+button {
+
+  font-family:
+    'Inter',
+    sans-serif;
+
+  cursor: pointer;
+}
+
+/* Links */
+
+a {
+
+  text-decoration: none;
+}
+
+/* Section Padding */
+
+section {
+
+  width: 100%;
+}
+
+/* Selection */
+
+::selection {
+
+  background:
+    #2563eb;
+
+  color:
+    white;
+}
+
+/* Smooth Animation */
+
+html {
+
+  scroll-behavior: smooth;
+}
