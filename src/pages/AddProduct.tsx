@@ -28,7 +28,7 @@ function AddProduct() {
     try {
 
       await axios.post(
-        "https://orufy-backend3.onrender.com/",
+        "https://orufy-backend3.onrender.com/products",
         {
           id,
           title,

@@ -16,7 +16,7 @@ function Products() {
   const fetchProducts = async () => {
 
     const res = await axios.get(
-      "https://orufy-backend3.onrender.com/"
+      "https://orufy-backend3.onrender.com/products"
     );
 
     setProducts(res.data);
