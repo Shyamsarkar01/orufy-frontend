@@ -28,7 +28,7 @@ function AddProduct() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/products",
+        "https://orufy-backend3.onrender.com/",
         {
           id,
           title,

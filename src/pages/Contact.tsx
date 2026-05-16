@@ -23,7 +23,7 @@ function Contact() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/contact",
+        "https://orufy-backend3.onrender.com/",
         {
           name,
           email,
